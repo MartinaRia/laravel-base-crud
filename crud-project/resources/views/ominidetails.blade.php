@@ -19,5 +19,6 @@
     </div>
     <div class="modification-button flex-container">
       <a href="{{route('destroy', $omino['id'])}}">DELETE THIS OMINO</a>
+      <a href="{{route('edit', $omino['id'])}}">EDIT THIS OMINO</a>
     </div>
 @endsection

@@ -46,4 +46,13 @@ class OminiController extends Controller
 
     return redirect() -> route ('home');
   }
+
+
+  public function edit($id){
+    $omino = OminiModel::findOrFail($id);
+
+    return view('omino-edit', compact('omino'));
+  }
+
+
 }

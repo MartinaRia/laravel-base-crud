@@ -188,17 +188,20 @@ main section .main-container ul a:hover {
 .modification-button a {
   text-decoration: none;
   padding: 10px;
+  margin: 0px 5px;
   border: 1px solid #bc008d;
   border-radius: 2px;
   color: #bc008d;
   background: #d3d3d391;
 }
 
-.form-store {
+.form-store,
+.form-edit {
   width: 50%;
 }
 
-.form-store input {
+.form-store input,
+.form-edit input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
