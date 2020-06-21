@@ -152,14 +152,18 @@ main section .main-container ul a:hover {
   margin: 2px;
 }
 
-.input-container {
-  flex-wrap: nowrap;
-  padding: 10px;
-  margin: 10px;
+.container-home {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.omini-container {
+  width: 50%;
 }
 
 .omini-list {
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .omini-list a {
@@ -188,5 +192,17 @@ main section .main-container ul a:hover {
   border-radius: 2px;
   color: #bc008d;
   background: #d3d3d391;
+}
+
+.form-store {
+  width: 50%;
+}
+
+.form-store input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d3d3d391;
+  border-radius: 2px;
 }
 

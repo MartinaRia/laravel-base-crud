@@ -169,14 +169,24 @@ main{
   margin: 2px;
 }
 
-.input-container{
-  flex-wrap: nowrap;
-  padding: 10px;
-  margin: 10px;
+// .input-container{
+//   flex-wrap: nowrap;
+//   padding: 10px;
+//   margin: 10px;
+// }
+
+.container-home{
+  width: 100%;
+  justify-content: space-around;
+}
+
+.omini-container{
+  width: 50%;
 }
 
 .omini-list{
   margin-bottom: 10px;
+  width: 100%;
 
 
   a{
@@ -205,5 +215,18 @@ main{
     border-radius: 2px;
     color: $highlight-color;
     background: $thin-color;
+  }
+}
+
+.form-store{
+  width: 50%;
+
+  input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    border: 1px solid $thin-color;
+    border-radius: 2px;
   }
 }
