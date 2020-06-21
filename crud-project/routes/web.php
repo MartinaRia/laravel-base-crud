@@ -7,3 +7,4 @@ Route::get('/ominidetails/{id}', 'OminiController@show')->name('show');
 Route::get('/ominidetails/delete/{id}', 'OminiController@destroy')->name('destroy');
 Route::post('/store', 'OminiController@store')->name('store');
 Route::get('/edit/{id}', 'OminiController@edit')->name('edit');
+Route::post('/update/{id}', 'OminiController@update')->name('update');

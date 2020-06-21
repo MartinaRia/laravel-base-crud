@@ -55,4 +55,23 @@ class OminiController extends Controller
   }
 
 
+
+  public function update(Request $request, $id){
+    $data = $request -> all();
+    $omino = OminiModel::findOrFail($id);
+
+    $omino -> firstname = $data['firstname'];
+    $omino -> lastname = $data['lastname'];
+    $omino -> address = $data['address'];
+    $omino -> code = $data['code'];
+    $omino -> state = $data['state'];
+    $omino -> phonenumber = $data['phonenumber'];
+    $omino -> role = $data['role'];
+
+    $omino ->save();
+
+    return redirect() -> route ('show', $omino['id']);
+  }
+
+
 }

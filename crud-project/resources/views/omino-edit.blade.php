@@ -9,7 +9,7 @@
 
       <h3>EDIT OMINO</h3>
       <br>
-      <form action="" method="post">
+      <form action="{{route('update', $omino['id'])}}" method="post">
         @csrf
         @method('POST')
 
@@ -20,7 +20,7 @@
         <input placeholder="State" type="text" name="state" value="{{$omino['state']}}">
         <input placeholder="Phonenumber" type="text" name="phonenumber" value="{{$omino['phonenumber']}}">
         <input placeholder="Role" type="text" name="role" value="{{$omino['role']}}">
-        <input type="submit" name="submit" value="SUBMIT">
+        <input type="submit" name="submit" value="UPDATE">
 
       </form>
     </div>
