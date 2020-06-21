@@ -20,4 +20,12 @@ class OminiController extends Controller
 
     return view('ominidetails', compact('omino'));
   }
+
+  public function destroy($id){
+
+    $omino = OminiModel::findOrFail($id);
+    $omino -> delete();
+
+    return redirect() -> route('home');
+  }
 }

@@ -17,4 +17,7 @@
       <h4>ROLE: </h4>
       <p>{{ $omino['role'] }}</p>
     </div>
+    <div class="modification-button flex-container">
+      <a href="{{route('destroy', $omino['id'])}}">DELETE THIS OMINO</a>
+    </div>
 @endsection

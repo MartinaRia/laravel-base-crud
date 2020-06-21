@@ -177,3 +177,16 @@ main section .main-container ul a:hover {
   margin-bottom: 10px;
 }
 
+.modification-button {
+  justify-content: flex-end;
+}
+
+.modification-button a {
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #bc008d;
+  border-radius: 2px;
+  color: #bc008d;
+  background: #d3d3d391;
+}
+

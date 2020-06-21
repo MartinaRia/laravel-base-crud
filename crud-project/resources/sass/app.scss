@@ -194,3 +194,16 @@ main{
     margin-bottom: 10px;
   }
 }
+
+.modification-button{
+  justify-content: flex-end;
+
+  a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid $highlight-color;
+    border-radius: 2px;
+    color: $highlight-color;
+    background: $thin-color;
+  }
+}
